@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicInformationOfDataWEBAPI", "BasicInformationOfDataWEBAPI.csproj", "{91EB4683-CA3E-4903-A676-7EDC313515B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YARPproxy", "..\YARPproxy\YARPproxy.csproj", "{EE478CDB-D7BE-413B-95C6-7A6C772C55AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91EB4683-CA3E-4903-A676-7EDC313515B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EB4683-CA3E-4903-A676-7EDC313515B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EB4683-CA3E-4903-A676-7EDC313515B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EB4683-CA3E-4903-A676-7EDC313515B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE478CDB-D7BE-413B-95C6-7A6C772C55AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE478CDB-D7BE-413B-95C6-7A6C772C55AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE478CDB-D7BE-413B-95C6-7A6C772C55AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE478CDB-D7BE-413B-95C6-7A6C772C55AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B06E552B-B6DF-4216-AA88-89E7D3EBC234}
+	EndGlobalSection
+EndGlobal

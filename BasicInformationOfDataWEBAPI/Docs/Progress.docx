@@ -1,0 +1,47 @@
+
+
+
+
+
+BasicInformationOfDataWEBAPI
+ ├── Controllers                  ← 接收 HTTP 请求，调用 Service
+ │     └── 控制器类.cs
+ │
+ ├── Services                     ← 业务逻辑层，处理核心业务
+ │     ├── IUserService.cs
+ │     └── UserService.cs
+ │     └── XXX.cs   ← 其它
+ │
+ ├── Domain                ← ? 
+ │     ├── Entities        ← 数据库实体
+ │     │     └── User.cs
+ │     │
+ │     └── Interfaces      ← 可选（领域接口）
+ │
+ ├── Infrastructure               ← 基础设施层，外部依赖封装
+ │     ├── IRedisService.cs       ← Redis 接口
+ │     ├── RedisService.cs        ← Redis 实现
+ │     ├── IDatabaseRepository.cs ← 数据库接口
+ │     └── DatabaseRepository.cs  ← 数据库实现
+ │     └── XXX.cs   ← 其它
+ │
+ ├── Redis                        ← Redis 高级封装（可选）
+ │     ├── DistributedLock.cs     ← 分布式锁
+ │     ├── PubSubService.cs       ← 发布/订阅
+ │     └── RedisCacheOptions.cs   ← Redis 配置封装
+ │     └── XXX.cs   ← 其它
+ │
+ ├── Common                       ← 公共资源层
+ │     ├── Enums				← 全局共享的枚举
+ │     │    └── XXX.cs
+ │     ├── Constants			← 避免硬编码，统一管理
+ │     │    └── XXX.cs
+ │     ├── DTOs					← Controller / Service 通信对象
+ │     │    └── XXX.cs
+ │     ├── Extensions			← 公共扩展方法
+ │     │    └── XXX.cs
+ │     └── Helpers				← 公共函数、工具方法
+ │          └── XXX.cs
+ │
+ ├── Program.cs                   ← 程序入口，注册 DI、配置中间件
+ └── appsettings.json              ← 配置文件：Redis、数据库、日志等
